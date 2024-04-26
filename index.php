@@ -230,11 +230,11 @@ if ($_POST) {
                 <section class="informacion-principal cajas">
                     <div>
                         <div>
-                            <p>Temperatura :</p>
+                            <p>Temperatura:</p>
                             <p class="temperatura"><?= $temperatura ?>º</p>
                         </div>
                         <div>
-                            <p>Sensación :</p>
+                            <p>Sensación:</p>
                             <p class="sensacion"><?= $sensacion ?>º</p>
                         </div>
 
