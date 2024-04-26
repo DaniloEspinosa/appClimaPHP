@@ -206,6 +206,89 @@ if ($_POST) {
             margin-bottom: 10px;
             padding: 10px;
         }
+
+        @media (width < 768px) {
+            .content {
+                width: 350px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 200;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .width-content {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            /* Formato de las cajas */
+            .cajas {
+                flex-direction: column;
+            }
+
+            .informacion-principal div {
+                width: 100%;
+            }
+
+            .informacion-principal div:first-child {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .informacion-principal div:last-child {
+                border-radius: 0 0 10px 10px;
+            }
+            .informacion-principal div {
+                width: 100%;
+            }
+            /* Caja donde se muestra la informacion principal */
+
+            .temperatura {
+                font-size: 4rem;
+            }
+
+            .sensacion {
+                font-size: 3rem;
+            }
+
+            img {
+                width: 80%;
+            }
+
+
+            /* Caja del input */
+            .elige-ciudad form {
+                flex-direction: column;
+                font-size: 1rem;
+            }
+
+            input {
+                height: 1.5rem;
+                width: 150px;
+            }
+
+            button {
+                margin-top: 10px;
+                padding: 5px 10px;
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            button:hover {
+                scale: 1.05;
+            }
+
+            /* Solo saldra en caso de que la ciudad elegida no sea encontrada */
+            .warning {
+
+                font-size: 1rem;
+
+            }
+        }
     </style>
 </head>
 
